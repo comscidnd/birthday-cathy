@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>surpriseeeeshuuu</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+<canvas id="c" aria-hidden="true"></canvas>
+
+<div id="intro">
+  <svg viewBox="0 0 24 18" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="3" width="22" height="14" fill="#ffd1e8"/><rect x="1" y="3" width="22" height="1" fill="#fff"/><rect x="1" y="16" width="22" height="1" fill="#e58ab8"/><rect x="2" y="4" width="2" height="2" fill="#ff9ccf"/><rect x="4" y="6" width="3" height="2" fill="#ff9ccf"/><rect x="7" y="8" width="3" height="2" fill="#ff9ccf"/><rect x="14" y="8" width="3" height="2" fill="#ff9ccf"/><rect x="17" y="6" width="3" height="2" fill="#ff9ccf"/><rect x="20" y="4" width="2" height="2" fill="#ff9ccf"/><rect x="10" y="10" width="4" height="2" fill="#ff9ccf"/><path d="M9 6h2v2h2V6h2v2h1v2h-1v1h-1v1h-1v1h-2v-1h-1v-1H9v-1H8V8h1z" fill="#ff6fb5" transform="translate(0,-1)"/><rect x="9" y="0" width="6" height="2" fill="#b9e6a0"/></svg>
+  <h1 class="px" style="font-size:clamp(14px,4vw,22px);color:var(--pink)">You Have A Mail!</h1>
+  <p class="sub">Only for Cathy</p>
+  <button class="btn" id="open">Open it, to see the Lights.</button>
+</div>
+
+<div id="bar" role="group" aria-label="Music and motion controls">
+  <span>♪</span>
+  <button id="pp" aria-label="Play or pause music" aria-pressed="false">▶</button>
+  <button id="mu" aria-label="Mute or unmute music" aria-pressed="false">♫</button>
+  <button id="mo" aria-label="Pause or resume animations" aria-pressed="false">✦</button>
+</div>
+<button class="btn m" id="retry">▶ Tap to play our music ♡</button>
+
+<main>
+  <section id="hero">
+    <div class="panel">
+      <h1 id="h1" aria-label="Happy birthday, My baby!"></h1>
+      <p id="p1" style="min-height:6.2em"></p>
+      <button class="btn" id="explore" style="visibility:hidden">Walk with me through this world? ♡</button>
+    </div>
+  </section>
+
+  <section id="letter">
+    <div class="panel letter">
+      <h2>A Letter For You</h2>
+      <p>My baby,</p>
+      <p>Every day with you feels like walking through a city that lights up just for us. I'm so grateful that I get to love someone like you. Thank you for being my favorite person, my comfort, and my biggest smile.</p>
+      <p>I hope you always remember how loved and special you are, not just today, but every single day. You deserve so many beautiful things in life, and I'll always be here to support you, cheer for you, and be proud of you.</p>
+      <p>I chose this city lights theme because I know how much you love them. I wanted to make something special that reminds me of you, a little world made just for you, with love in every detail. I hope you like it, baby.</p>
+      <p>I know we still have so many memories to make and places to see together. I look forward to the day when I can finally hold your hand and enjoy the city lights with you. Until then, I'll keep loving you in every little way I can.</p>
+      <p>Whatever life brings us, I want you to know that I'll always be here for you. I'll keep choosing you, supporting you, and loving you through every chapter of our lives.</p>
+      <p>Happy birthday, my baby! I hope this year brings you happiness, beautiful opportunities, and everything your heart wishes for. I'm so proud of you, and I'll always be your biggest fan.</p>      
+      <p>If I could give you the whole world, I would. But for now, I made this little world just for you.</p>
+      <p>I love you so much, Cathy.</p>
+      <p class="sig">Forever your donnatics ♡</p>
+
+    </div>
+  </section>
+
+  <section id="memories">
+    <div class="panel" style="width:min(820px,100%)">
+      <h2>My Virtual Gift</h2>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="playlist">
+    <div class="panel">
+      <h2>Songs For You ♪</h2>
+      <div id="cd" aria-hidden="true"></div> 
+      <p id="np" aria-live="polite" style="color:var(--pink)">City lullaby (default)</p>
+      <div id="tl"></div>
+    </div>
+  </section>
+
+  <section id="game">
+    <div class="panel">
+      <h2>Can You Catch My Heart?</h2>
+      <p>Catch 10 falling hearts. Drag, or use ← →.</p>
+      <canvas id="gc" width="240" height="160" aria-label="Heart catching game"></canvas>
+      <p class="px" id="score" style="font-size:11px;color:var(--pink)">Hearts: 0 / 10</p>
+      <button class="btn m" id="gstart">Start</button>
+    </div>
+  </section>
+
+  <section id="walk">
+  <div class="panel" style="width:min(720px,100%)">
+    <h2>A Walk Through the City Lights</h2>
+    <canvas id="wc" width="240" height="120" role="img" aria-label="Two pixel characters walking hand in hand through a city at night"></canvas>
+    <p id="wline" class="wline"></p>
+  </div>
+</section>
+  
+  
+</main>
+<footer class="px" style="font-size:10px">Made by Donnatics.</footer>
+
+<script src="script.js"></script>
+<script src="walk.js"></script>
+</body>
+</html>
